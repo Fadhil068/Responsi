@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket - Museum Nusantara</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Nusantara</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="koleksi.html">Koleksi</a></li>
+                <li><a href="order.html">Pemesanan Tiket</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Pemesanan Tiket</h2>
+        <form action="simpan_orderan.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Tanggal Berkunjung:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="tiket">Jumlah Tiket:</label>
+            <input type="number" id="Tiket" name="Tiket" required>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </main>
+</body>
+</html>
